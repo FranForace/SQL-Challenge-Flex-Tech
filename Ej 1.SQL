@@ -30,7 +30,7 @@ FROM   ej1;
 SET sql_safe_updates = 0;
 
 --Eliminacion de tabla
-DROP TABLE ej1; 
+DROP TABLE IF EXISTS ej1; 
 
 -- Reactivacion modo seguro
 SET sql_safe_updates = 1;
