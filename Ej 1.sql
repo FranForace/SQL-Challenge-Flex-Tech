@@ -7,7 +7,7 @@ CREATE TABLE ej1
      value SMALLINT
   );
 
---Inserccion de valores
+--Inserccion de datos
 
 INSERT INTO ej1
 VALUES      (NULL,
