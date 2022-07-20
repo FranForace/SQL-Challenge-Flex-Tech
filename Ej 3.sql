@@ -5,7 +5,7 @@ CREATE TABLE ej3
      year DATE
   );
 
--- Inserccion de valores
+-- Inserccion de datos
 INSERT INTO ej3
 VALUES      (NULL,
              "1776-01-01"),
