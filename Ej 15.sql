@@ -34,13 +34,9 @@ delimiter $$
  READ SQL DATA
  BEGIN 
 	IF Param_ID = Id THEN 
-		SET @Borrar = DELETE FROM Ej15_a WHERE id = Param_id ON UPDATE CASCADE AND ;
+		SET @Borrar = DELETE FROM Ej15_a WHERE id = Param_id ON UPDATE CASCADE;
 	ELSEIF Param_id <> ID THEN
     SET @Borrar = "-1";
     END IF;
-       IF @Borrar <> '-1' THEN
-		SET @clausula_select = ;
-		PREPARE ejecucion FROM @clausula_select;
-		EXECUTE ejecucion;
-		DEALLOCATE PREPARE ejecucion;
-	END IF;
+END $$
+
